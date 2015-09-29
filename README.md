@@ -1,6 +1,6 @@
 # Wellensimulation-nicht-parallel
 
-Dies ist die Wellensimulation ohne Parallelisierung.
+Dies ist die Wellensimulation ohne Parallelisierung. \n
 Es wurden keine experimentellen oder halbfertige Funktionen hochgeladen.
 Dieser wurde in der Bachelorarbeit zum ermitteln der Simulationsgeschwindigkeiten verwendet.
 
