@@ -2,7 +2,7 @@
 
 Dies ist die Wellensimulation ohne Parallelisierung.
 Es wurden keine experimentellen oder halbfertige Funktionen hochgeladen.
-Dieser wurde in der Bachelorarbeit zum ermitteln der Simulationsgeschwindigkeiten verwendet.
+Dieser Code wurde in der Bachelorarbeit zum ermitteln der Simulationsgeschwindigkeiten verwendet.
 
 Kompilierung:
 ```
