@@ -11,4 +11,6 @@ gcc -Wall -Wextra -Werror -O3 -march=native -funroll-loops -c -o wave3d.o -lm wa
 gcc wave3d.o wavestate3d.o -o wave3d -lm
 ````
 Ausführung:
+```
 ./wave3d nx ny nz iterations
+```
