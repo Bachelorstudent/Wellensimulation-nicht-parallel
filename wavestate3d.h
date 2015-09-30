@@ -60,10 +60,10 @@ zero_wavestate3d_allign(pwavestate3dAllign wv, int steps);
 
 /* Set interesting boundary values */
 void
-boundary_wavestate3d(pwavestate3d wv, real t);
+boundary_wavestate3d(pwavestate3d wv, real t, int steps);
 
 void
-boundary_wavestate3d_allign(pwavestate3dAllign wv, real t);
+boundary_wavestate3d_allign(pwavestate3dAllign wv, real t, int steps);
 
 /* Perform one step of the leapfrog method */
 void
