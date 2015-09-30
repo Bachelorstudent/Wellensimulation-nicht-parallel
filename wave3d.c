@@ -39,8 +39,8 @@ main(int argc, char **argv)
   zero_wavestate3d(wv, steps);
   zero_wavestate3d_allign(wvVec, steps);
   
-  boundary_wavestate3d(wv, 0.1);
-  boundary_wavestate3d_allign(wvVec, 0.1);
+  boundary_wavestate3d(wv, 0.1, steps);
+  boundary_wavestate3d_allign(wvVec, 0.1, steps);
 
   printf("start leapfrog\n");
   s = clock();
