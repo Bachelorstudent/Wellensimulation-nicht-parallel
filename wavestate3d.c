@@ -164,7 +164,11 @@ boundary_wavestate3d(pwavestate3d wv, real t)
   real ***x = wv->x;
 
   if(0.0 < t && t < 0.25)
-    x[0][0][0] = sin(M_PI * t / 0.125);
+  {
+    x[0][0][1] = sin(M_PI * t / 0.125);
+    x[0][1][0] = sin(M_PI * t / 0.125);
+    x[1][0][0] = sin(M_PI * t / 0.125);
+  }
 }
 
 void
