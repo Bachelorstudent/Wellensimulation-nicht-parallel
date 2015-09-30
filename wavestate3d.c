@@ -159,25 +159,29 @@ zero_wavestate3d_allign(pwavestate3dAllign wv, int steps)
    ------------------------------------------------------------ */
 
 void
-boundary_wavestate3d(pwavestate3d wv, real t)
+boundary_wavestate3d(pwavestate3d wv, real t, int steps)
 {
   real ***x = wv->x;
 
   if(0.0 < t && t < 0.25)
   {
-    x[0][0][1] = sin(M_PI * t / 0.125);
-    x[0][1][0] = sin(M_PI * t / 0.125);
-    x[1][0][0] = sin(M_PI * t / 0.125);
+    x[0][0][steps] = sin(M_PI * t / 0.125);
+    x[0][steps][0] = sin(M_PI * t / 0.125);
+    x[steps][0][0] = sin(M_PI * t / 0.125);
   }
 }
 
 void
-boundary_wavestate3d_allign(pwavestate3dAllign wv, real t)
+boundary_wavestate3d_allign(pwavestate3dAllign wv, real t, int steps)
 {
   real *x = wv->x;
   
+  int arrayCntX = wvVec->nx + steps * 2;
+  int arrayCntXY = wvVec->ny + steps * 2;
+  arrayCntXY *= arrayCntX;
+  
   if(0.0 < t && t < 0.25)
-    x[0] = sin(M_PI * t / 0.125);
+    x[arrayCntXY + arrayCntX + 1] = sin(M_PI * t / 0.125);
 }
 
 /* ------------------------------------------------------------
